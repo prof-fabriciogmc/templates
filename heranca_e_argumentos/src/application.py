@@ -10,6 +10,9 @@ def home():
 @minha_app.route('/personalizada')
 def home_perso():
     usu = 'Fabrício'
+    # Para ler dados do BD ou csv (usar pandas)
+    # criar a variável com os dados da lista
+    # enviar para a aplicação de modo similar.
     return render_template('home_personalizada.html', usuario=usu)
 
 if __name__ == '__main__':
